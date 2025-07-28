@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tanavi Shinde | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<script>
+  function openResume() {
+    document.getElementById('resumeModal').style.display = 'block';
+  }
+
+  document.querySelector('.close-btn').onclick = function () {
+    document.getElementById('resumeModal').style.display = 'none';
+  }
+
+  window.onclick = function (event) {
+    if (event.target == document.getElementById('resumeModal')) {
+      document.getElementById('resumeModal').style.display = 'none';
+    }
+  }
+</script>
+
+<body>
+
+    <!-- Resume Modal -->
+<div id="resumeModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <iframe src="Tanavi_Shinde_Resume.pdf" frameborder="0"></iframe>
+    <button onclick="window.frames[0].print()" class="print-btn">Print Resume</button>
+  </div>
+</div>
+
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">Tanavi Shinde</div>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#contact">Let's Connect</a></li>
+        <li><a href="#" onclick="openResume()">Resume</a></li>
+
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <h1 class="fade-in-name">Hi, I'm Tanavi Shinde</h1>
+    <p>BSc IT Student | Python & React Developer</p>
+    <a href="#" class="resume-btn" onclick="openResume()">View Resume</a>
+
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project-list">
+      <div class="project">
+        <h3>Python Projects</h3>
+        <p>I have developed a Shop Management System using Python with Tkinter and MySQL/SQLite, as well as a Daily Expense Tracker. These demonstrate skills in backend development, GUI design, and database integration.</p>
+      </div>
+      <div class="project">
+        <h3>React.js Projects</h3>
+        <p>I have developed several Python-based applications that demonstrate my ability to build practical, user-friendly software solutions. These include a Shop Management System with a graphical user interface (GUI) using Tkinter and data storage via MySQL/SQLite, allowing for efficient inventory tracking and sales reporting and a Daily Expense Tracker that logs and categorizes personal expenses with reporting features. These projects reflect my skills in Python programming, GUI design, database integration, and API usage.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      I am an enthusiastic and dedicated BSc IT student with a strong interest in software development and real-world problem-solving. I have built several projects using Python for backend logic and React.js for frontend design, including a personal portfolio website, a shop management system, and basic login interfaces. I have a good understanding of Database Management Systems (DBMS) and Relational DBMS like MySQL and SQLite, which I have used in multiple applications to handle structured data effectively. I am also exploring the fundamentals of cloud computing and have experimented with platforms like AWS and Microsoft Azure to understand how cloud services support application deployment and scalability. I enjoy learning new technologies, building hands-on projects, and aim to grow as a full-stack developer with a strong foundation in cloud and database systems.
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+<section id="skills" class="skills">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-card">Python</div>
+    <div class="skill-card">tkinter</div>
+    <div class="skill-card">DBMS</div>
+    <div class="skill-card">AWS Cloud</div>
+    <div class="skill-card">VMware</div>
+    <div class="skill-card">React.js</div>
+    <div class="skill-card">HTML & CSS</div>
+    <div class="skill-card">Git & GitHub</div>
+    <div class="skill-card">SQLite & MySQL</div>
+  </div>
+</section>
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Let's Connect</h2>
+    <div class="contact-details">
+        <a href="#" class="resume-btn" onclick="openResume()">View Resume</a>
+      <p><strong>Email:</strong> tanvishinde017@gmail.com</p>
+      <p><strong>Phone:</strong> +91 8369479431</p>
+      <p><strong>Location:</strong> Pune, Maharashtra</p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/tanvishinde017" target="_blank">github.com/tanvishinde017</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/tanavi-shinde-84683b347/" target="_blank">linkedin.com/in/tanvishinde</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Tanavi Shinde. All rights reserved.</p>
+  </footer>
+
+
+</body>
+</html>
